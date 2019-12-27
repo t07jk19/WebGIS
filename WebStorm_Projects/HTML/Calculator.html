@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <script src="../JavaScripts/jquery-3.4.1.js"></script>
+</head>
+<body>
+    <p>First Number <input type="number" id="num1" min="0" max="100" value="5"></p>
+    <p>Second Number <input type="number" id="num2" min="0" max="100" value="5"></p>
+    <input type="button" id="button" value="Multiply">
+    <p id="result"></p>
+    <script>
+        $("#button").on("click",function () {
+            $("#result").text("the result is "+$("#num1").val()*$("#num2").val());
+        });
+    </script>
+</body>
+</html>
